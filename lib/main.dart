@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(msg:'Hello Flutter'), //string pass korlam
+      home: HomePage(msg:'Hello Flutter'), 
     );
   }
 }
