@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-  final String msg; //1ta string nilam
+  final String msg; 
   const HomePage({super.key, required this.msg});
 
   @override
@@ -9,18 +9,18 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  int _count = 0; //variable declare korlam,initially man dicchi 0,(_)private rakhlam
+  int _count = 0; 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.msg),
       ),
-      body: Center( //maje anar jonno
+      body: Center( 
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center, //column er children gulo center theke suru hoy vartically
+          mainAxisAlignment: MainAxisAlignment.center, 
           children: [
-               const Text('You have pushed this many times'), //const key eta,1ta text show korbe jeta kokhono change hobe na
+               const Text('You have pushed this many times'), 
             Text('$_count', style: Theme.of(context).textTheme.headline5,)
           ],
         ),
@@ -32,8 +32,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
   _incrementCount(){
-   setState(() {  //setState er kaj hocche bar bar build method k call kora,
-                  // setState method call korar karone build method scan kore abr call korte pare nao pare
+   setState(() {  
      _count++;
 
    });
